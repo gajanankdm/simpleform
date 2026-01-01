@@ -6,22 +6,22 @@
       <form #signUpForm="ngForm"
       (ngSubmit)="onsubmit(signUpForm)">
         <div class="form-group">
-          <label  for="userName">userName</label>
+          <label  for="userName">UserName</label>
           <input required="" ngModel name="userName"
           #username="ngModel" 
           type="text" class="form-control">
 <strong class="text-danger" *ngIf="username.touched&& username.invalid">
-  user name bhar le pehale!!!</strong>
+  please Enter UserName!!!!</strong>
         </div>
         <div class="form-group">
-          <label for="email">email</label>
+          <label for="email">Email</label>
           <input 
           ngModel 
           name="email"
          required=""
            type="text"  #email="ngModel" class="form-control">
 <strong class="text-danger" *ngIf="email.touched&& email.invalid">
-  ab email kon bharege !!!</strong>
+  plz Enter email !!!</strong>
 
         </div>
         <button type="submit" [disabled]="signUpForm.invalid"
@@ -45,8 +45,8 @@
             <td>1</td>
             <td>gajanan</td>
             <td>gaju@123gmail.com</td>
-            <td> <button mat-flat-button color="primary">edit</button></td>
-            <td> <button mat-flat-button color="warn">delete</button></td>
+            <td> <button mat-flat-button color="primary">Edit</button></td>
+            <td> <button mat-flat-button color="warn">Delete</button></td>
 
           </tr>
         </tbody>
